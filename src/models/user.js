@@ -15,7 +15,10 @@ const userSchema = new mongoose.Schema({
 	},
 	age: {
 		type: Number
-	}
+	},
+	isAdmin: {
+		type: Boolean
+	},
 });
 
 const User = mongoose.model('user', userSchema);
